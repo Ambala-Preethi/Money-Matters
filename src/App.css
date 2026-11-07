@@ -1295,8 +1295,15 @@
 }
 
 @keyframes modalPop {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .modal-header {
@@ -1545,7 +1552,9 @@
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loader-container {
@@ -1582,13 +1591,29 @@
 }
 
 @keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
 
-.skeleton-title { width: 40%; height: 14px; }
-.skeleton-value { width: 70%; height: 28px; }
-.skeleton-sub { width: 50%; height: 12px; }
+.skeleton-title {
+  width: 40%;
+  height: 14px;
+}
+
+.skeleton-value {
+  width: 70%;
+  height: 28px;
+}
+
+.skeleton-sub {
+  width: 50%;
+  height: 12px;
+}
 
 .skeleton-row {
   display: flex;
@@ -1617,9 +1642,18 @@
   align-items: flex-end;
 }
 
-.skeleton-w60 { width: 60%; }
-.skeleton-w40 { width: 40%; height: 12px; }
-.skeleton-w50 { width: 80px; }
+.skeleton-w60 {
+  width: 60%;
+}
+
+.skeleton-w40 {
+  width: 40%;
+  height: 12px;
+}
+
+.skeleton-w50 {
+  width: 80px;
+}
 
 /* --- Error and Empty States --- */
 .error-state-card,
@@ -1702,8 +1736,15 @@
 }
 
 @keyframes slideInRight {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .toast-success {
@@ -1834,4 +1875,3 @@
     align-items: flex-start;
   }
 }
-

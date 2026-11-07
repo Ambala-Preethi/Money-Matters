@@ -1,12 +1,12 @@
 /**
- * Formats a number to currency string (e.g. $1,250.00)
+ * Formats a number to currency string in Indian Rupees (e.g. ₹1,25,000.00)
  */
-export const formatCurrency = (amount, currency = '$') => {
+export const formatCurrency = (amount, currency = '₹') => {
   if (amount === null || amount === undefined || isNaN(amount)) {
     return `${currency}0.00`;
   }
   const numericVal = Math.abs(Number(amount));
-  const formatted = numericVal.toLocaleString('en-US', {
+  const formatted = numericVal.toLocaleString('en-IN', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });

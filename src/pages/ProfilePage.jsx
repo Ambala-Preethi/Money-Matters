@@ -10,7 +10,7 @@ export const ProfilePage = () => {
 
   const handleResetData = () => {
     localStorage.setItem(
-      'money_matters_transactions_v1',
+      'money_matters_transactions_v2',
       JSON.stringify(INITIAL_TRANSACTIONS)
     );
     window.location.reload();
@@ -69,7 +69,7 @@ export const ProfilePage = () => {
               <span className="field-label">
                 <Wallet size={16} /> Preferred Currency
               </span>
-              <span className="field-value">USD ($)</span>
+              <span className="field-value">INR (₹)</span>
             </div>
             <div className="profile-field-item">
               <span className="field-label">Net Balance Recorded</span>

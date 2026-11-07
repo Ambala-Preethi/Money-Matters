@@ -1,6 +1,6 @@
 import { INITIAL_TRANSACTIONS } from '../constants';
 
-const STORAGE_KEY = 'money_matters_transactions_v1';
+const STORAGE_KEY = 'money_matters_transactions_v2';
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
 
 /**
